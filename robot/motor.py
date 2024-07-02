@@ -38,7 +38,7 @@ class Motor(Configurable):
 class Servo(HasTraits):
     value = traitlets.Float()
 
-    def __init__(self, pca:PCA9685, channel:int, min_width:int=750, center_width:int=1500, max_width:int=2250):
+    def __init__(self, pca:PCA9685, channel:int, min_width:int=1000, center_width:int=1500, max_width:int=2000):
         # min_width and max_width unit in microsecond
         self.pca = pca
         self.channel = channel
