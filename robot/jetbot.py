@@ -38,10 +38,10 @@ class JetBot:
         self.set_motors(-speed, -speed)
 
     def left(self, speed:Union[float,int]) -> None:
-        self.set_motors(speed,-speed)
+        self.set_motors(-speed,speed)
 
     def right(self, speed:Union[float,int]) -> None:
-        self.set_motors(-speed,speed)
+        self.set_motors(speed,-speed)
 
     def stop(self) -> None:
         self.set_motors(0,0)
